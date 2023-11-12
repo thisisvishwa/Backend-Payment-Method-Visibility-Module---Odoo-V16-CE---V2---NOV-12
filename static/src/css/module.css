@@ -1,0 +1,74 @@
+/* module.css */
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.payment-method:last-child {
+    border-bottom: none;
+}
+
+.payment-method .payment-method-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.payment-method .payment-method-type {
+    color: #666;
+}
+
+.payment-method-details {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.payment-method:hover .payment-method-details {
+    display: block;
+}
+
+.filter-payment-method {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.filter-payment-method select {
+    padding: 5px;
+}
+
+.sort-payment-method {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.sort-payment-method select {
+    padding: 5px;
+}
+
+.payment-method-notification {
+    padding: 10px;
+    background-color: #ffeb3b;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .payment-method,
+    .filter-payment-method,
+    .sort-payment-method,
+    .payment-method-notification {
+        flex-direction: column;
+    }
+}

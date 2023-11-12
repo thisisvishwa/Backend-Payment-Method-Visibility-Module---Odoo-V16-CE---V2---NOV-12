@@ -1,0 +1,24 @@
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Payment Method Data -->
+        <record id="payment_method_cash" model="payment.method">
+            <field name="name">Cash</field>
+            <field name="description">Cash Payment</field>
+        </record>
+        <record id="payment_method_credit_card" model="payment.method">
+            <field name="name">Credit Card</field>
+            <field name="description">Credit Card Payment</field>
+        </record>
+        <record id="payment_method_paypal" model="payment.method">
+            <field name="name">PayPal</field>
+            <field name="description">PayPal Payment</field>
+        </record>
+        <record id="payment_method_bank_transfer" model="payment.method">
+            <field name="name">Bank Transfer</field>
+            <field name="description">Bank Transfer Payment</field>
+        </record>
+    </data>
+</odoo>
+```
