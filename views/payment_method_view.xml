@@ -1,0 +1,43 @@
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_payment_method_list" model="ir.ui.view">
+        <field name="name">payment.method.list</field>
+        <field name="model">payment.method</field>
+        <field name="arch" type="xml">
+            <tree string="Payment Method">
+                <field name="payment_method_id"/>
+                <field name="payment_method_name"/>
+                <field name="payment_method_type"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_payment_method_form" model="ir.ui.view">
+        <field name="name">payment.method.form</field>
+        <field name="model">payment.method</field>
+        <field name="arch" type="xml">
+            <form string="Payment Method">
+                <sheet>
+                    <group>
+                        <field name="payment_method_id"/>
+                        <field name="payment_method_name"/>
+                        <field name="payment_method_type"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_payment_method_search" model="ir.ui.view">
+        <field name="name">payment.method.search</field>
+        <field name="model">payment.method</field>
+        <field name="arch" type="xml">
+            <search string="Payment Method">
+                <field name="payment_method_name" string="Payment Method Name"/>
+                <filter string="Payment Method Type" name="group_by_payment_method_type" context="{'group_by':'payment_method_type'}"/>
+            </search>
+        </field>
+    </record>
+</odoo>
+```

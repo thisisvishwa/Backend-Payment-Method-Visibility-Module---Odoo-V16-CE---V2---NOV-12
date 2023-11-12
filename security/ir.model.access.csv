@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_payment_method,model_payment_method,model_payment_method,base.group_user,1,1,1,1
+access_sale_order,model_sale_order,model_sale_order,base.group_user,1,1,1,1
+access_invoice,model_invoice,model_invoice,base.group_user,1,1,1,1
+access_ecommerce_order,model_ecommerce_order,model_ecommerce_order,base.group_user,1,1,1,1
